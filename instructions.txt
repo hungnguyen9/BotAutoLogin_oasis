@@ -20,5 +20,7 @@ Các case:
 5. Case 5: đầy đủ, join vào Meeting
 
 
+Lưu ý: chỉnh sửa đường dẫn đến file csv cho phù hợp
+
 
 

@@ -31,7 +31,7 @@ def try_click(driver, xpath):
 def check_exists_by_xpath(driver, xpath):
     """
 
-    :param driver:
+    :param driver: by default
     :param xpath: xpath if we want to find
     :return: return False if we could not find, return True otherwise
     """
