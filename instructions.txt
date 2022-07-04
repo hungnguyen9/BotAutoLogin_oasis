@@ -1,0 +1,24 @@
+Tool login nhiều tài khoản hỗ trợ bởi Selenium 
+
+File csv chứa data của các tài khoản đăng nhập, bao gồm: 
+
+Email
+Password
+Space (tên của space, không phải ID)
+Floor (tên của floor, không phải ID)
+Unit_ID (ID của unit)
+ForceMeeting
+
+
+
+Các case:
+
+1. Case 1: Chỉ login, không join vào space 
+2. Case 2: Chỉ join Space, không join Floor
+3. Case 3: Chỉ join Floor, không join Unit
+4. Case 4: Chỉ join Unit, không join Meeting
+5. Case 5: đầy đủ, join vào Meeting
+
+
+
+
