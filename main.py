@@ -16,14 +16,14 @@ def try_click(driver, xpath):
     :return: False if we fail to click the element in 5 times, otherwise if we can then True
     """
     i = 0
-    while i < 5:
+    while i < 9:
         try:
             driver.find_element(By.XPATH, xpath).click()
-            i = 6
+            i = 10
         except:
             time.sleep(1)
             i = i + 1
-    if i == 5:
+    if i == 9:
         return False
     return True
 
@@ -78,6 +78,9 @@ def login(file):
             continue
         if not try_click(driver, "//div[text()='"+line[2]+"']"):        # space
             print ("User " + str(i) + " cannot choose space with the name " + line[2])
+            continue
+        if not try_click(driver, "//div[text()='教室']"):
+            print("User " + str(i) + " cannot enter the office ")
             continue
         if not try_click(driver, "//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained workplace_sso-btn_submit']"):      # enter space
             print("User " + str(i) + " cannot click MuiButtonBase")
